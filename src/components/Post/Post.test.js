@@ -20,10 +20,22 @@ it('renders with or without a title', () => {
   act(() => {
     render(<Post />, container);
   });
-  expect(container.textContent).toBe('This post do not have a title.');
+  expect(container.textContent).toBe('');
 
   act(() => {
     render(<Post title="New Title" />, container);
   });
   expect(container.textContent).toBe('New Title');
+});
+
+it('renders with or without a text', () => {
+  act(() => {
+    render(<Post />, container);
+  });
+  expect(container.textContent).toBe('');
+
+  act(() => {
+    render(<Post text="Do incididunt commodo ea occaecat." />, container);
+  });
+  expect(container.textContent).toBe('Do incididunt commodo ea occaecat.');
 });

@@ -6,10 +6,8 @@ const Post = ({ title, text }) => {
   return (
     <Card className="post-card">
       <Card.Body>
-        <Card.Title>
-          {title ? title : 'This post do not have a title.'}
-        </Card.Title>
-        <Card.Text>{text ? text : ''}</Card.Text>
+        {title && <Card.Title>{title}</Card.Title>}
+        {text && <Card.Text>{text}</Card.Text>}
       </Card.Body>
     </Card>
   );
