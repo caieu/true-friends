@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn run storybook`
+Open the storybook interface at [http://localhost:6006](http://localhost:6006), to try all project components.
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
